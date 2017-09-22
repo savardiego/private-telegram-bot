@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/local/bin/nodejs
 
 var contains = require("multiple-contains") // Contains library
 var path = require('path')

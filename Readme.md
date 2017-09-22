@@ -22,6 +22,10 @@ Before use it you must create a bot in Telegram bot platform. It’s very easy:
 More info here: https://core.telegram.org/bots
 With token of your new bot, edit /config/bot.json and add your token value to ‘token’ property
 
+Update node path inside the scripts, otherwise you'll get a ENOENT (Entity not fount error).
+---> /Users/<user>/.nvm/versions/node/v8.5.0/bin/node
+or update /usr/bin/node to the correct executable
+
 Everything is ready… run with: ./private-telegram-bot.js
 Now you can launch commands from your Telegram bot, from your mobile. Send /help to see which commands you have ready to run.
 
