@@ -11,12 +11,17 @@ const myhome = {"on": 1, "off": 0}
 
 console.log(serverAddress + ":" + serverPort)
 
-if (process.argv.length != 5) {
+if (process.argv.length != 3) {
   console.log("Wrong command")
 } else {
-  let action = process.argv[2]
-  let ambient = process.argv[3]
-  let pl = process.argv[4]
+  let instructions = process.argv[2]
+  let commands = instructions.split(" ")
+  if (commands.length != 3) {
+    console.log("Wrong command") 
+  }
+  let action = commands[0]
+  let ambient = commands[1]
+  let pl = commands[2]
   console.log("action: " + action)
   console.log("ambient: " + ambient)
   console.log("pl: " + pl)
@@ -24,11 +29,6 @@ if (process.argv.length != 5) {
   console.log("command string: " + command)
   send(command)
 }
-
-// print process.argv
-process.argv.forEach(function (val, index, array) {
-  console.log(index + ': ' + val);
-});
 
 function send(message) {
   sendMessage(serverAddress, serverPort, message)
