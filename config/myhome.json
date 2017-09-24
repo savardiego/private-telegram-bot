@@ -1,0 +1,31 @@
+{
+    "port": "20000",
+    "host": "192.168.28.35",
+    "ambients": {
+        "cucina": {
+            "amb": "1",
+            "pl" : {
+                "principale": "3",
+                "fornalli": "2",
+                "cappa": "6",
+                "tavolo": "4"
+            }
+        },
+        "esterno": {
+            "amb": "2",
+            "pl" : {
+                "back": "1",
+                "ingresso": "3"
+            }
+        },
+        "scale": {
+            "amb": "9",
+            "pl" : {
+                "terra": "1",
+                "primo": "2",
+                "secondo": "3"
+            }
+        }
+
+    }
+}
