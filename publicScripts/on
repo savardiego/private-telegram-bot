@@ -1,0 +1,18 @@
+#!/usr/local/bin/nodejs
+
+const turn = require('./turn.js')
+
+if (process.argv.length != 3) {
+  console.log("Non ho capito quello che mi hai chiesto..")
+} else {
+  let instructions = process.argv[2]
+  let commands = instructions.split(" ")
+  if (commands.length != 1) {
+    console.log("Non ho capito quello che mi hai chiesto..") 
+  } else {
+    let pointAddress = commands[0]
+    console.log("Point Address: " + pointAddress)
+    turn.send("light", "on", pointAddress)
+  }
+
+}
