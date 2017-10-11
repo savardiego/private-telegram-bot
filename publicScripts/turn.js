@@ -7,7 +7,7 @@ const serverAddress = conf.host
 const serverPort = conf.port
 
 const actions = {'on': 1, 'off': 0}
-const kinds = {'light': 1}
+const kinds = {'light': 1, 'gen': 0}
 
 
 

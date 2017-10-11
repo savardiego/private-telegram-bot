@@ -2,6 +2,7 @@
     "port": "20000",
     "host": "192.168.28.35",
     "lights": {
+        "generale": "0",
         "cucina": "10",
         "esterno": "20",
         "scale": "90",
